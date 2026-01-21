@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Rust Ratio (CodeLLDB)",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=rust-ratio",
+                    "--package=rust-ratio"
+                ],
+                "filter": {
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
